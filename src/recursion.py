@@ -6,7 +6,7 @@ def countdown(i: int) -> int:
     """
     print(i)
     if i <= 0:
-        return
+        return 0
     else:
         countdown(i - 1)
 

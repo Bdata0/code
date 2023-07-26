@@ -19,4 +19,4 @@ def factorial(num: int) -> int:
         return num * factorial(num - 1)
 
 
-print(factorial(5))
+#print(factorial(5))
