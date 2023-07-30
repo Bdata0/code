@@ -8,12 +8,21 @@ NUM = 5
 
 def two_sum_output():
     """
-    This function calls the description and test methods of the `Solution` class
+    This function calls the description and test methods of the `TwoSumSolution` class
     from the `src.leetcode.two_sum` module.
     """
-    sol = src.leetcode.two_sum.Solution()
+    sol = src.leetcode.two_sum.TwoSumSolution()
     sol.description()
     sol.test_two_sum()
+
+def is_palindrome_output():
+    """
+    This function calls the description and test methods of the `IsPalindromeSolution`
+    class from the `src.leetcode.palindrome_num` module.
+    """
+    sol = src.leetcode.palindrome_num.IsPalindromeSolution()
+    sol.description()
+    sol.test_is_palindrome()
 
 if __name__ == "__main__":
 
@@ -23,3 +32,4 @@ if __name__ == "__main__":
     print(f'The factorial of {NUM} is equal to {src.fact_number(NUM)}')
 
     two_sum_output()
+    is_palindrome_output()
