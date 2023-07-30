@@ -1,5 +1,30 @@
 """1. Two Sum"""
-DESCRIPTION = """
+class Solution:
+    """Class provides Solution for 1.Two Sum leetcode problem"""
+    def two_sum(self, nums: list[int], target: int) -> list[int]:
+        """
+        Finds two numbers in the given list `nums`
+        that add up to the target number `target`.
+
+        Args:
+            nums (List[int]): A list of integers.
+            target (int): The target sum.
+
+        Returns:
+            List[int]: A list containing the indices
+            of the two numbers that add up to the target sum.
+        """
+        hash_map = {}  # val:index
+        for idx, num in enumerate(nums):
+            diff = target - num
+            if diff in hash_map:
+                return [hash_map[diff], idx]
+            hash_map[num] = idx
+        return
+    def description(self):
+        """Function provides printing two_sum problem description"""
+        DESCRIPTION = """
+1. Two Sum
 (https://leetcode.com/problems/two-sum/)
 
 Given an array of integers nums and an integer target,
@@ -38,31 +63,7 @@ Only one valid answer exists.
 Follow-up: Can you come up with an algorithm
 that is less than O(n2) time complexity?
 """
-
-
-class Solution:
-    """Class provides Solution for 1.Two Sum leetcode problem"""
-
-    def two_sum(self, nums: list[int], target: int) -> list[int]:
-        """
-        Finds two numbers in the given list `nums`
-        that add up to the target number `target`.
-
-        Args:
-            nums (List[int]): A list of integers.
-            target (int): The target sum.
-
-        Returns:
-            List[int]: A list containing the indices
-            of the two numbers that add up to the target sum.
-        """
-        hash_map = {}  # val:index
-        for idx, num in enumerate(nums):
-            diff = target - num
-            if diff in hash_map:
-                return [hash_map[diff], idx]
-            hash_map[num] = idx
-        return
+        return print(DESCRIPTION)
 
     def test_two_sum(self):
         """Function provides testing two_sum function"""
@@ -109,6 +110,6 @@ class Solution:
         )
 
 if __name__ == "__main__":
-    print(DESCRIPTION)
     s = Solution()
+    s.description()
     s.test_two_sum()
