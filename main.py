@@ -11,9 +11,9 @@ def two_sum_output():
     This function calls the description and test methods of the `Solution` class
     from the `src.leetcode.two_sum` module.
     """
-    s = src.leetcode.two_sum.Solution()
-    s.description()
-    s.test_two_sum()
+    sol = src.leetcode.two_sum.Solution()
+    sol.description()
+    sol.test_two_sum()
 
 if __name__ == "__main__":
 

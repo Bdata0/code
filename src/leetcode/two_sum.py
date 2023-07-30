@@ -23,7 +23,7 @@ class Solution:
         return
     def description(self):
         """Function provides printing two_sum problem description"""
-        DESCRIPTION = """
+        description = """
 1. Two Sum
 (https://leetcode.com/problems/two-sum/)
 
@@ -63,7 +63,7 @@ Only one valid answer exists.
 Follow-up: Can you come up with an algorithm
 that is less than O(n2) time complexity?
 """
-        return print(DESCRIPTION)
+        return print(description)
 
     def test_two_sum(self):
         """Function provides testing two_sum function"""
