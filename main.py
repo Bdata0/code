@@ -24,6 +24,15 @@ def is_palindrome_output():
     sol.description()
     sol.test_is_palindrome()
 
+def roman_to_integer_output():
+    """
+    This function calls the description and test methods of the `RomanToIntegerSolution`
+    class from the `src.leetcode.roman_to_integer` module.
+    """
+    sol = src.leetcode.roman_to_integer.RomanToIntegerSolution()
+    sol.description()
+    sol.test_roman_to_int()
+
 if __name__ == "__main__":
 
     print(f'The position #{NUM} in {MY_LIST} is {src.binary_search(MY_LIST, NUM)}')
@@ -33,3 +42,4 @@ if __name__ == "__main__":
 
     two_sum_output()
     is_palindrome_output()
+    roman_to_integer_output()

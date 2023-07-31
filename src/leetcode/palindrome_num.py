@@ -59,6 +59,7 @@ class IsPalindromeSolution:
             " positive numbers" \
             " \033[2;30;43m passed \033[0;0m"
         )
+
         # Test cases for negative numbers
         assert self.is_palindrome(-121) is False
         assert self.is_palindrome(-12321) is False
@@ -68,6 +69,7 @@ class IsPalindromeSolution:
             " negative numbers" \
             " \033[2;30;43m passed \033[0;0m"
         )
+
         # Test cases for single digit numbers
         assert self.is_palindrome(0) is True
         assert self.is_palindrome(1) is True
