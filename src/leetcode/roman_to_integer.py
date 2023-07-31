@@ -2,7 +2,7 @@
 class RomanToIntegerSolution(object):
     """Class provides Solution for 13.Roman to Integer leetcode problem"""
     def description(self):
-        """Function provides printing two_sum problem description"""
+        """Function provides printing roman_to_int problem description"""
         descript = """
         13. Roman to Integer
         (https://leetcode.com/problems/roman-to-integer/)

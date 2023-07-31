@@ -33,6 +33,16 @@ def roman_to_integer_output():
     sol.description()
     sol.test_roman_to_int()
 
+def longest_common_prefix_output():
+    """
+    This function calls the description and test methods of the
+    `LongestCommonPrefixSolution` class from the `src.leetcode.longest_common_prefix`
+    module.
+    """
+    sol = src.leetcode.longest_common_prefix.LongestCommonPrefixSolution()
+    sol.description()
+    sol.test_longest_common_prefix()
+
 if __name__ == "__main__":
 
     print(f'The position #{NUM} in {MY_LIST} is {src.binary_search(MY_LIST, NUM)}')
@@ -43,3 +53,4 @@ if __name__ == "__main__":
     two_sum_output()
     is_palindrome_output()
     roman_to_integer_output()
+    longest_common_prefix_output()

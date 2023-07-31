@@ -2,7 +2,7 @@
 class IsPalindromeSolution:
     """Class provides Solution for 9.Palindrome Number leetcode problem"""
     def description(self):
-        """Function provides printing two_sum problem description"""
+        """Function provides printing is_palindrome problem description"""
         descript = """
         9. Palindrome Number
         (https://leetcode.com/problems/palindrome-number/)
